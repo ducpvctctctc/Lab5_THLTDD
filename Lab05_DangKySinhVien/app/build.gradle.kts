@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
 }
 
 android {
@@ -37,12 +38,6 @@ android {
 
     kotlinOptions {
         jvmTarget = "17"
-    }
-}
-
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
     }
 }
 
